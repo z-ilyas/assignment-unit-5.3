@@ -17,5 +17,60 @@ let album1 = {
   Collection.push(album1);
 // - Return the newly created object
 console.log(addToCollection(album1));
+//Part 2
+//- Test the `addToCollection` function:
+// - Add 6 albums to your collection. Aim to have a mix of both same and different artists and published years. 
+//(Feel free to share your musical interests, or make stuff up. Totally fine either way.)
+//  - Console.log each album as added using the returned value.
 
+let album2 = {
+    title: 'Bad gal',
+    artist: 'King asti',
+    yearPublished: 2001,
+  }
+  Collection.push(album2);
+  console.log(addToCollection(album2));
+
+  let album3 = {
+    title: 'Naughty',
+    artist: 'Sean Paul',
+    yearPublished: 2010,
+  }
+  Collection.push(album3);
+  console.log(addToCollection(album3));
+
+  let album4 = {
+    title: 'Late Night',
+    artist: 'Sean Paul',
+    yearPublished: 2017,
+  }
+  Collection.push(album4);
+  console.log(addToCollection(album4));
+
+  let album5 = {
+    title: 'Lover Boi',
+    artist: 'Drake',
+    yearPublished: 2021,
+  }
+  Collection.push(album5);
+  console.log(addToCollection(album5));
+
+  let album6 = {
+    title: 'Westside',
+    artist: '2pac',
+    yearPublished: 2014,
+  }
+  Collection.push(album6);
+  console.log(addToCollection(album6));
+
+  let album7 = {
+    title: 'GG',
+    artist: 'Gamer',
+    yearPublished: 2004,
+  }
+  Collection.push(album7);
+  console.log(addToCollection(album7));
+
+  // - After all are added, console.log the `collection` array.
+console.log(Collection);
   
