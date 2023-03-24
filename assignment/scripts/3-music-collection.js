@@ -1,10 +1,11 @@
 console.log('***** Music Collection *****')
-
+//** 1st part
 let Collection = [];
 // Create a variable `collection` that starts as an empty array.
 
 function addToCollection(title, artist, yearPublished) {
-    return Collection;
+    console.log('In addToCollection',title, artist, yearPublished );
+    return Collection[Collection.length -1];
 }
 
 
@@ -12,7 +13,7 @@ function addToCollection(title, artist, yearPublished) {
 //  - Take in the album's `title`, `artist`, `yearPublished` as input parameters
 
 
-const music = {
+let music = {
     title: 'Mr. Nice',
     artist: "King'asti",
     yearPublished: 2006,
@@ -23,5 +24,8 @@ Collection.push(music);
 //  - Add the new object to the end of the `collection` array
 
 //- Return the newly created object
-console.log(addToCollection(music));
+console.log(addToCollection());
+
+
+
 
