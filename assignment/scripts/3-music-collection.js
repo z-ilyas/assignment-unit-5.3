@@ -73,4 +73,16 @@ let album2 = {
 
   // - After all are added, console.log the `collection` array.
 console.log(Collection);
-  
+//* Part 3
+//- Add a function named `showCollection`. This function should:
+//- Take in an array parameter. (This allows it to be reused to show any collection, like the results from the find or search.)
+//- Loop over the array and console.log each album's information formatted like: `TITLE by ARTIST, published in YEAR`.
+
+function showCollection(array) {
+    console.log('There are',`${array.length}`, 'albums in the collection');
+    for (let album of array) {
+    console.log(`${album.title} by ${album.artist}, published in ${album.yearPublished}`);
+}
+}
+//- Test the `showCollection` function.
+showCollection(Collection);
