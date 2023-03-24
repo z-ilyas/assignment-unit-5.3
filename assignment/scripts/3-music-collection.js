@@ -91,7 +91,19 @@ showCollection(Collection);
 //- Create an array to hold any results, empty to start
 //- Loop through the `collection` and add any objects with a matching artist to the array.
 //- Return the array with the matching results. If no results are found, return an empty array.
-
+function findByArtist(artist) {
+    let matchingArtist = [];
+    for(let album of Collection){
+        if(album.artist === artist){
+            matchingArtist.push(album);
+        }
+        else{
+            return matchingByArtist;
+        }
+    }
+}
+console.log('Test', findByArtist('jj'));
+console.log('Test', findByArtist('Sean Paul'));
 
 
 //- Test the `findByArtist` function. Make sure to test with an artist you know is in the collection, as well as an artist you know is not in your collection. 
