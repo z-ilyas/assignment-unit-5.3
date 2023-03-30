@@ -97,15 +97,15 @@ function findByArtist(artist) {
         if(album.artist === artist){
             matchingArtist.push(album);
         }
-        else{
-            return matchingByArtist;
         }
+       return matchingArtist;
+
     }
-}
+
+//- Test the `findByArtist` function. Make sure to test with an artist you know is in the collection, 
+// as well as an artist you know is not in your collection. 
+//Check that for artists with multiple matches, all are found.
 console.log('Test', findByArtist('jj'));
 console.log('Test', findByArtist('Sean Paul'));
-
-
-//- Test the `findByArtist` function. Make sure to test with an artist you know is in the collection, as well as an artist you know is not in your collection. 
-//Check that for artists with multiple matches, all are found.
+console.log('Test', findByArtist('King asti'));
 
